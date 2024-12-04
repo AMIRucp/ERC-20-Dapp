@@ -1,7 +1,6 @@
 # MyToken Smart Contract
 
 This smart contract implements an ERC-20 token with additional features such as burning, pausing transfers, minting new tokens, and setting a token URI. It inherits from OpenZeppelin’s ERC-20, ERC-20Burnable, ERC-20Pausable, ERC-20Permit, and Ownable contracts.
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
 
 
 
