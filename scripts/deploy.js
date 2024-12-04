@@ -31,17 +31,7 @@ async function main() {
     console.log(`Minted ${hre.ethers.formatEther(initialMintAmount)} tokens to ${deployer.address}`);
 
     // Verify the contract on Etherscan
-    console.log("\nVerifying contract on Etherscan...");
-    try {
-        await hre.run("verify:verify", {
-            address: tokenAddress,
-            constructorArguments: [deployer.address],
-        });
-        console.log("Contract verified successfully");
-    } catch (error) {
-        console.log("Verification failed:", error);
-    }
-
+    
     // Print token information
     console.log("\nToken Information:");
     console.log("Name:", await myToken.name());
